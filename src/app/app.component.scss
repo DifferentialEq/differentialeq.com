@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans|Quicksand');
+
+:host {
+  display: block;
+}
+
+.bg-diffeq {
+  background-color: #504545;
+}
+
+div.main{
+  position: relative;
+}
+
+.footer {
+  padding: 10px;
+  background: #504545;
+  margin-bottom: -200px;
+  height: 10vh;
+  width: 100%;
+  bottom: 0px;
+}
+
+h3 {
+  font-family: cursive;
+}

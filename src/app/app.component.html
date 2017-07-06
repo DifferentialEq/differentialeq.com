@@ -1,0 +1,22 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-diffeq">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img class="brand-image" src="img/differentialeq.png" />
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li *ngFor="let navitem of navLinks" class="nav-link {{navitem['active']}}">
+                <a class="nav-link" [routerLink]="[navitem['address']]">{{navitem['name']}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <a [href]="url">See our github</a>
+</div>
